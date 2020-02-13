@@ -534,6 +534,8 @@ def displayattendance():
     flash(f'Attendance has been saved successfully!', 'success')
     return render_template("displayattendance.html", student_name_list=student_name_list, attendance=attendance,num=num)
 
+# displaying attendance 
+
 @app.route("/displayattendance1",methods=["get",'post'])
 def displayattendance1():
     l = Student.query.all()
